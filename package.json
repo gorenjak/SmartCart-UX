@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-validator": "^7.2.0",
+    "googleapis": "^144.0.0",
+    "http-server": "^14.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.15",
+    "socket.io": "^4.8.0",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "html-loader": "^5.1.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "start": "node REST/server.js",
+    "start-push": "node REST/push-notification.js",
+    "start-shopping": "node REST/shopping-list.js",
+    "build": "webpack --mode production",
+    "check": "echo $PATH && ls -l ./node_modules/.bin"
+  }
+}
