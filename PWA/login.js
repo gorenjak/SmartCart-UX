@@ -132,7 +132,16 @@ loginForm.addEventListener('submit', async function(event) {
     // Send a push notification
     sendPushNotification('Uspešna prijava', 'Prijavili ste se v sistem!');
 
-    window.location.href = 'index.html';
+    // Naključno preusmerjanje na eno izmed treh strani
+    const randomPage = Math.random();
+    if (randomPage <= 0.33) {
+        window.location.href = 'index.html'; // Izvorna stran
+    } else if (randomPage <= 0.66) {
+        window.location.href = 'index-B.html'; // Alternativna stran B
+    } else {
+        window.location.href = 'index-C.html'; // Alternativna stran C
+    }
+
   } else {
     // Show an error message for incorrect login credentials
     document.getElementById('error-message').style.display = 'block';

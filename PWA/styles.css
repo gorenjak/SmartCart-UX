@@ -12,6 +12,15 @@
   background-color: #5a7c0b;
 }
 
+.secondary-button {
+  background-color: #cccccc; /* Svetlo siva */
+  color: #333333;           /* Temno siva */
+}
+
+.secondary-button:hover {
+  background-color: #b3b3b3; /* Temnejša siva */
+}
+
 .input-style{
   padding: 5px;
 }
@@ -75,7 +84,7 @@
   cursor: pointer;
 }
   
-.edit-button, .delete-button {
+.edit-button, .delete-button, .add-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -91,7 +100,7 @@
   margin: auto 0;
 }
   
-.edit-button img, .delete-button img {
+.edit-button img, .delete-button img, .add-button img {
   width: auto;
   height: 15px;
 }
